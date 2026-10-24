@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data: https:; connect-src 'self' https://*.supabase.co https://api.github.com; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Papa Mor Ndiaye – Web Developer</title>
+<meta name="description" content="Portfolio of Papa Mor Ndiaye, web developer.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bar" aria-hidden="true"></div><div id="cg" aria-hidden="true"></div>
+<a class="skip" href="#main" data-i="skip">Skip to content</a>
+<header><div class="wrap"><nav aria-label="Main">
+<a class="logo" href="#top">Papa Mor <b>Ndiaye</b></a>
+<div class="links" id="links">
+<a href="#about" data-i="nav_about"></a><a href="#services" data-i="nav_services"></a><a href="#process" data-i="nav_process"></a><a href="#projects" data-i="nav_projects"></a><a href="#faq" data-i="nav_faq"></a><a href="#contact" data-i="nav_contact"></a>
+<div class="lang" role="group" data-a="aria_lang"><button type="button" data-l="fr" aria-pressed="false">FR</button><button type="button" data-l="en" aria-pressed="true">EN</button></div>
+<button type="button" class="ib" id="tg" aria-label="Theme">◐</button>
+</div>
+<button type="button" class="burger" id="bg" data-a="aria_menu" aria-expanded="false">☰</button>
+</nav></div></header>
+<main id="main">
+<section class="hero" id="top"><div class="orbs" id="orbs" aria-hidden="true"><i class="o1"></i><i class="o2"></i><i class="o3"></i></div>
+<div class="wrap">
+<span class="badge rv" data-d="0"><i></i><span data-i="h_badge"></span></span>
+<h1 class="rv grad" data-d="120" data-i="h_title"></h1><p class="rv" data-d="240" data-i="h_intro"></p>
+<div class="btns rv" data-d="360"><a class="btn p" href="#projects" data-i="h_btn1"></a><a class="btn s" href="#contact" data-i="h_btn2"></a></div>
+</div></section>
+<div class="marq rv" id="tk" aria-label="Skills"></div>
+<section id="about"><div class="wrap rv about">
+<figure class="pic"><img id="ph_img" src="assets/papa-mor.jpg" width="720" height="900" alt="Portrait of Papa Mor Ndiaye" loading="lazy"><button type="button" class="chg" id="chgph">🖼 Changer la photo</button></figure>
+<div><h2 data-i="a_title"></h2><p class="mu" data-i="a_text"></p>
+<div class="chips"><span data-i="a_v1"></span><span data-i="a_v2"></span><span data-i="a_v3"></span></div></div>
+</div></section>
+<section id="services" class="pt0"><div class="wrap rv"><h2 data-i="s_title"></h2><div class="grid" id="sv"></div></div></section>
+<section id="process" class="pt0"><div class="wrap rv"><h2 data-i="pr_title"></h2><p class="mu" data-i="pr_intro"></p><ol class="grid steps" id="pr"></ol></div></section>
+<section id="projects" class="pt0"><div class="wrap rv"><h2 data-i="p_title"></h2><p class="mu" id="p_intro"></p><div class="grid" id="pj"></div></div></section>
+<section id="faq" class="pt0"><div class="wrap rv narrow"><h2 data-i="faq_title"></h2><div id="fq"></div></div></section>
+<section class="contact" id="contact"><div class="wrap rv"><h2 data-i="c_title"></h2><p class="mu" data-i="c_text"></p>
+<ul><li><span data-i="c_phone"></span> : <a id="ph"></a></li><li><span data-i="c_email"></span> : <a id="em"></a></li></ul>
+<div class="btns" id="cb"></div></div></section>
+</main>
+<footer><div class="wrap"><span id="cp" data-i="f_text"></span><ul class="soc" id="soc" data-a="f_social"></ul></div></footer>
+<button type="button" id="up" aria-label="Top">↑</button>
+<div id="tb" role="toolbar" aria-label="Admin" hidden>
+<span class="tip">✎ Cliquez sur un texte pour le modifier</span>
+<button type="button" data-act="add">＋ Projet</button><button type="button" data-act="set">⚙ Réglages</button><button type="button" class="pr" data-act="pub">⬆ Publier</button><button type="button" data-act="exit">✕ Quitter</button>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="adm" role="dialog" aria-modal="true" aria-label="Admin"><div class="box" id="bx"></div></div>
+<script src="config.js"></script>
+<script src="content.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
